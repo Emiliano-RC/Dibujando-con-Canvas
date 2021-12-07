@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con canvas</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1>Dibujando con el mouse o las teclas</h1>
+    </header>
+    <div class="titulo">
+      <h2>Selecciona el color y el tamaño del puntero. Luego dibuja manteniendo el click
+         izquierdo del mouse o haciendo click una vez y presionando las flechas del teclado</h2>
+    </div>
+    <div class="pluma">
+      <p>Color &nbsp;
+      <input type="color" id="colorcito"/>
+      &nbsp; Tamaño del puntero &nbsp;
+      <input type="range" id="grosor" min="1" max="6"/>
+      <input type="button" class="button" id="borrar" value="Borrar lienzo"/>
+      </p>
+    </div>
+    <div class="lienzo">
+      <canvas id="area_de_dibujo" width="900" height="500"></canvas>
+    </div>
+    <footer class="pie">
+      <h3>ERC 12/2021</h3>
+    </footer>
+    <script src="Eventos.js"></script>
+  </body>
+</html>
